@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Its tech support</title>
+<style>
+body {
+    background-image: linear-gradient(to bottom right,rgb(50, 50, 150),rgba(75, 75, 100,));
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'main main main main main main';
+  grid-gap: 10px;
+  font-family: Arial;
+  padding: 10px;
+  background-image: linear-gradient(to bottom right,blue,indigo);
+  border-radius: 25px;
+}
+.grid-container > div {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1 { grid-area: header; text-align: center; background-color: white; border-radius: 25px; }
+.item2 { grid-area: main; text-align: center; background-color: white; border-radius: 25px; }
+
+</style>
+</head>
+</html>
+<body>
+    <div class="grid-container">
+      <!--header-->
+        <div class="item1">
+            <h2><a href="index.html">Its tech support</a></h2>
+            <h6><a href="contact.html"> • Contact • </a><a href="setup.html"> • Setup • </a></h6>
+        </div>
+        <!--main-->
+        <div class="item2">
+            <h3>CPU: Intel(R) Core(TM) i3-7100 CPU @ 3.90GHz</h3>
+            <h3>GPU: NVIDIA GeForce GTX 1050 Ti 4GB VRAM</h3>
+            <h3>RAM: 8GB DDR4 2400MHz</h3>
+            <h3>SSD: ADATA SX8200PNP 500GB M2</h3>
+            <h3>HDD: Noname 1TB SATA 3</h3>
+            <h3>MB: MSI ARCTIC</h3>
+            <h5>(Other parts are just no names and I don't remember names of those :3)</h5>
+        </div>
+    </div>
+</body>
